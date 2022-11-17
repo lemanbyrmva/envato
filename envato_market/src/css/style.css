@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(26, 26, 52);
+}
+#banner{
+    margin: 40px 0px;
+}
+#banner .banner_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+ 
+    
+}
+
+#banner .banner_items .banner_head .banner_overlay {
+    width: 400px;
+    border: 3px solid rgb(51, 51, 81);
+    border-radius: 17px;
+    height: 520px;
+transition: .5s ease-in-out;
+transform: translateY(0);
+  
+    
+}
+#banner .banner_head:hover>.banner_overlay{
+    transform: translateY(-20px);
+    border: 3px solid red;
+}
+#banner .banner_items .banner_head .banner_img{
+        width: 334px;
+    height: 341px;
+     position: relative; 
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    top: 23px;
+    cursor: pointer;
+    
+}
+#banner .banner_items .banner_head .banner_img i:hover{
+    color: red;
+}
+#banner .banner_items .banner_head .banner_img i{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: rgb(33 44 65 /35%);
+    color: white;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+#banner .banner_items .banner_head .banner_img img{
+    position: relative;
+width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 17px;
+    
+}
+#banner .banner_items .banner_head .banner_img:hover>.img_overlay{
+    transform: translateY(0);
+}
+#banner .banner_items .banner_head .banner_img .img_overlay{
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+     justify-content: center;
+    align-items: center; 
+    transform: translateY(500px);
+    transition: .4s ease-in-out;
+}
+
+#banner .banner_items .banner_head .banner_img .img_overlay button{
+    
+    padding: 15px 26px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 24px;
+    font-weight: 600;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 14px;
+    position: relative;
+    width: 163px;
+    cursor: pointer;
+}
+#banner .banner_items .banner_head .banner_img .img_overlay button:hover   {
+    color: white;
+    background-color:  rgb(232, 17, 17)
+}
+#banner .banner_items .banner_head .banner_img .img_overlay button i{
+color: red;
+background-color: transparent;
+}
+#banner .banner_items .banner_head .banner_img .img_overlay button:hover>i{
+position: absolute;
+background-color: transparent;
+    color: rgb(243, 243, 243);
+}
+
+#banner .banner_items .banner_head .banner_footer{
+   padding: 46px 32px;
+    color: white;
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_head{
+outline: none;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Michroma', sans-serif;
+    cursor: pointer;
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_head h2:hover{
+    color: red;
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_body .banner_f_body_left {
+        font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+
+
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_body .banner_f_body_left .pic{
+        margin-right: 12px;
+        font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px 0px;
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_body .banner_f_body_left .test{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 7px;
+   
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_body .banner_f_body_left img{
+        height: 44px;
+    width: 44px;
+    border-radius: 15px;
+
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_body .banner_f_body_left .test p{
+
+font-weight: 400;
+    text-align: left;
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_body .banner_f_body_left .test span{
+    font-size: 14px;
+   font-weight: 400;
+    line-height: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#banner .banner_items .banner_head .banner_footer .banner_footer_body .banner_f_body_right span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+   font-weight: 400;
+    line-height: 22px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#product .product_item {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+#product .product_item .product_opsi .product_head .product_img {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transition: 1s ease-in-out;
+}
+#product .product_item .product_opsi .product_head .product_img img {
+  width: 100%;
+  height: 100%;
+}
+#product .product_item .product_opsi .product_head .product_img .icons {
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+}
+#product .product_item .product_opsi .product_alt {
+  padding: 50px 10px;
+  text-align: center;
+}
+#product .product_item .product_opsi .product_alt h6 {
+  font-size: 16px;
+  color: black;
+}
+#product .product_item .product_opsi .product_alt span {
+  font-size: 22px;
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  padding: 10px 0px;
+}
+#product .product_item .product_opsi .product_alt button {
+  padding: 10px;
+  width: 141px;
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(184, 181, 181);
+  margin: 12px 0px;
+}
+#product .product_item .product_opsi .product_imghover {
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+}
+
+#product .product_item .product_opsi .product_imghover img {
+  width: 200px;
+  height: 300px;
+}
+#product .product_item .product_opsi .product_imghover .icons {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#product .product_item .product_opsi .product_img:hover > .product_imghover {
+  /* transition: 0.2s ease-in-out; */
+  background-color: rgb(92, 90, 90);
+  position: absolute;
+  top: 20px;
+}
+
+.product_opsi {
+  position: relative;
+  /* transition: 2s ease-in-out; */
+}
+
+.product_opsi .product_imghover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 5; */
+  /* display: none; */
+}
+.product_imghover .position_img {
+  width: 300px;
+  height: 300px;
+}
+
+/* .product_head {
+    transition: 5s ease-in-out;
+} */
+
+
+.product_head:hover.position_img {
+  cursor: pointer;
+  /* display: block; */
+  /* transition: 1s ease-in-out; */
+}
+.overlay{
+    position: absolute;
+    opacity: 0;
+    background-color: gray;
+}
